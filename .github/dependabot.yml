@@ -1,0 +1,76 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /AppWithModules/app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests/shared/Require/PackageJsonApp/io
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests/shared/Require/PackageJsonAppNoMain/io
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests/shared/Require/PackageJsonAppWithoutExtension/io
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests/shared/Require/PackageJsonMainPointsToDir
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests/shared/Require/PackageJsonSyntaxError/io
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests/shared/Require/ResolveCanonicalPath
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tests/shared
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tns_modules/dummy-package
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tns_modules/tns-core-modules/shared/Require/PackageJsonTns/io
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /TestRunner/app/tns_modules/tns-core-modules/shared/Require/RequirePriority/dependency5
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
